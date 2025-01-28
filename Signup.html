@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project X Fast</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .login-strip {
+            width: 400px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .login-strip h2 {
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        .login-strip input[type="email"],
+        .login-strip input[type="password"],
+        .login-strip input[type="password"][name="confirm-password"],
+        .login-strip a.submit-button {
+            width: 90%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .login-strip a.submit-button {
+            display: inline-block;
+            width: 90%; /* Slightly reduced width */
+            background: #3E2A1A; /* Rust color */
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .login-strip a.submit-button:hover {
+            background: #a1380c;		 /* Darker shade of rust */
+        }
+        .login-strip a.forgot-password {
+            color:  #F3E9DC; 					/* Rust color */
+     
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="PROJECT x FAST (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="login-strip">
+        <h2>SIGN UP</h2>
+        <form>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="password" name="password" placeholder="Your Password" required>
+            <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+            <a href="mainhomepage.html" class="submit-button">SIGN UP</a>
+        </form>
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="forgot-password">Forgot your password?</a>
+    </div>
+    <div class="footer">
+        PROJECT X FAST
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+{
+box-sizing: border-box;
+}
+body {
+font-family: sans-serif;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f8f8f8;
+}
+.product-container {
+display: flex;
+width: 100vw;
+height: 100vh;
+background: #fff;
+}
+.product-image {
+flex: 1;
+background-color: #f5f5f5;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.product-image img {
+max-width: 90%;
+max-height: 90%;
+}
+.product-details {
+flex: 1;
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.product-title {
+margin-bottom: 20px;
+font-size: 36px;
+color: #333;
+}
+.product-description {
+margin-bottom: 20px;
+font-size: 16px;
+color: #777;
+line-height: 1.5;
+}
+.product-price {
+margin-bottom: 20px;
+font-size: 24px;
+color: #333;
+}
+.size-buttons {
+display: flex;
+gap: 10px;
+margin-bottom: 20px;
+}
+.size-button {
+display: none;
+}
+.size-label {
+padding: 10px 20px;
+border: 2px solid transparent;
+background: none;
+cursor: pointer;
+font-size: 16px;
+text-align: center;
+}
+.size-button:checked + .size-label {
+background: #000;
+color: #fff;
+border-color: #000; 
+}
+.add-to-cart {
+padding: 15px 30px;
+border: none;
+background: #000;
+color: #fff;
+cursor: pointer;
+font-size: 16px;
+}
+.add-to-cart:hover {
+background: #444;
+}
+</style>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="jacket 4.webp" alt="T-shirt">
+    </div>
+    <div class="product-details">
+      <h3 class="product-title">Classic Cream Logo Hoodie</h3>
+      <p class="product-description">
+       Experience ultimate comfort and style with this cozy hoodie, crafted for a perfect blend of warmth and modern design.
+      </p>
+      <p class="product-price">Rs 5,800</p>
+      <div class="size-buttons">
+        <input type="radio" name="size" id="size-s" class="size-button">
+        <label for="size-s" class="size-label">S</label>
+        <input type="radio" name="size" id="size-m" class="size-button">
+        <label for="size-m" class="size-label">M</label>
+        <input type="radio" name="size" id="size-l" class="size-button">
+        <label for="size-l" class="size-label">L</label>
+        <input type="radio" name="size" id="size-xl" class="size-button">
+        <label for="size-xl" class="size-label">XL</label>
+      </div>
+      <a href="CheckoutPage.html">
+        <button class="add-to-cart">Add to Cart</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

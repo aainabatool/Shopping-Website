@@ -1,0 +1,157 @@
+
+<head>
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+										/* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+          
+            color: black;
+        }
+
+       									         /* Header Styles */
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+           
+            text-align: center; /* Center the text */
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: black;
+                  }
+        
+ 									       /* Product Section Styles */
+
+
+        .product-card {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            border-radius: 8px;
+            overflow: hidden;
+            color: white;
+        }
+
+
+
+
+
+     										 /* HOVER PICTURE EXPAND CODE */
+
+
+        .product-card:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .overlay-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            text-align: left;
+        }
+
+        .overlay-text h5 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .overlay-text p {
+            font-size: 0.9rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+       										 /* Footer Styles */
+
+
+        footer {
+            background-color: #3e2a1a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+   									 <!-- Header -->
+    <header>
+        <a class="navbar-brand" href="#">PROJECT x FAST®</a>
+    </header>
+
+
+   									 <!-- Main Section -->
+    <div class="container-fluid">
+        <div class="row">
+
+       								        <!-- Hoodies Section -->
+
+
+            <div class="col-4 p-3">
+                <a href="hoodies.html" style="text-decoration: none; color: inherit;">
+                    <div class="product-card" style="background-image: url('hoodie.jpg');">
+                        <div class="overlay-text">
+                            <h5>Hoodies</h5>
+                            <p>Hoodies | Jackets</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          							        <!-- Knitwear Section -->
+
+
+            <div class="col-4 p-3">
+                <a href="knitwear.html" style="text-decoration: none; color: inherit;">
+                    <div class="product-card" style="background-image: url('knitwear.png');">
+                        <div class="overlay-text">
+                            <h5>Knitwear</h5>
+                            <p>Sweaters | Polos | Jackets</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        								    <!-- Shirts Section -->
+
+
+            <div class="col-4 p-3">
+                <a href="shirts.html" style="text-decoration: none; color: inherit;">
+                    <div class="product-card" style="background-image: url('shirthome.jpg');">
+                        <div class="overlay-text">
+                            <h5>Shirts</h5>
+                            <p>Casual | Formal</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   										 <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p> <br>A SYMBOL OF QUALITY AND LUXURY</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
