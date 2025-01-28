@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Confirmation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;      				 /* Z INDEX FOR DISPLAYING VIDEO BEHIND TEXT */
+        }
+							  /*BOX CODE FOR ALLIGNMENT AND COLOUR */
+      
+  .confirmation-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);           
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .confirmation-container h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .confirmation-container p {
+            font-size: 1.5em;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #50440E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+
+
+     										 /* BUTTON HOVER CODE */
+
+
+
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+  										  <!-- Video background CODE-->
+    <video class="video-background" autoplay muted loop>
+        <source src="Confirmationpagevideo.mp4" type="video/mp4">
+    </video>
+
+  										  <!-- Confirmation message CODE -->
+    <div class="confirmation-container">
+        <h4>Project x FAST®</h4>
+       <h6> <p> Your order has been placed! <br>We will send you an email confirmation shortly.</p></h6>
+        <a href="mainhomepage.html" class="button">Shop More</a>
+    </div>
+
+</body>
+</html>
+
